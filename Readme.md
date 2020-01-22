@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Андрей Решетов](https://up.htmlacademy.ru/htmlcss/27/user/647095).
-* Наставник: `Артем Рудов`.
+* Студент: [Андрей Решетов](https://htmlacademy.ru/profile/id647095).
+* Наставник: `Артем Рудов`(https://htmlacademy.ru/profile/artrudov).
 
 ---
 
