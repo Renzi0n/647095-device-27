@@ -10,6 +10,13 @@
         <a href="index.html"><img src="img/device.svg" alt="Логотип" width="163" height="35"></a>
       </div>
       <ul> 
+        <li>
+          <form action="" method="get">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <button type="submit"></button>
+            <input id="search" name="search" type="search" placeholder="Поиск по сайту">
+          </form>
+        </li>
         <li><a href="#">Валентин Петухов</a></li>
         <li><button type="button">Выйти</button></li>
         <li><a href="#">Сравнить</a></li>
@@ -21,6 +28,14 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul>
+          <li>Виртуальная реальность</li>
+          <li>Моноподы для селфи</li>
+          <li>Экшн-камеры</li>
+          <li>Фитнес-браслеты</li>
+          <li>Умные часы</li>
+          <li>Квадрокоптеры</li>
         </ul>
       </nav>
       <h1>Моноподы для селфи</h1>
@@ -41,44 +56,96 @@
                 <li><a href="#">По популярности</a></li>
               </ul>
             </article>
-            <article>
-                <h3>Стоимость</h3>
-            </article>
-            <article>
-                <h3>Цвет</h3>
-            </article>
-            <article>
-                <h3>Bluetooth</h3>
-            </article>
-            <a href="#">Показать</a>
+            <form action="" method="GET">\
+              <article>
+                  <h3>Стоимость</h3>
+              </article>
+              <article>
+                    <fieldset>
+                      <legend><h3>Цвет</h3></legend>
+                      <ul>
+                        <li>
+                          <input type="checkbox" name="black" id="black" checked>
+                          <label for="black">
+                            Черный
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="white" id="white">
+                          <label for="white">
+                            Белый
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="blue" id="blue" checked>
+                          <label for="blue">
+                            Синий
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="red" id="red" checked>
+                          <label for="red">
+                            Красный
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="pink" id="pink" >
+                          <label for="pink">
+                            Розовый
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+              </article>
+              <article>
+                  <fieldset>
+                    <legend><h3>Bluetooth</h3></legend>
+                    <ul>
+                      <li>
+                        <input type="radio" name="bluetooth" value="yes" id="yes">
+                        <label for="yes">
+                          Есть
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" name="bluetooth" value="no" id="no">
+                        <label for="no  ">
+                          Нет
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+              </article>
+              <button type="submit">Показать</button>
+            </form>
         </section>
         <section>
-            <h2>Товары</h2>
+            <h2 class="visually-hidden">Товары</h2>
             <ul>
               <li>
                 <article>
-                  <div><img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></div>
+                  <div><img src="img/item-1.jpg" alt="Черная селфи-палка с телефоном" width="360" height="380"></div>
                   <h3><a href="#">Любительская селфи-палка</a></h3>
                   <p>500 руб.</p>
                 </article>
               </li>
               <li>
                 <article>
-                  <div><img src="img/item-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380"></div>
+                  <div><img src="img/item-2.jpg" alt="Черная селфи-палка" width="360" height="380"></div>
                   <h3><a href="#">Профессиональная селфи-палка</a></h3>
                   <p>1500 руб.</p>
                 </article>
               </li>
               <li>
                 <article>
-                  <div><img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380"></div>
+                  <div><img src="img/item-3.jpg" alt="Черно-желтая селфи палка с камерой" width="360" height="380"></div>
                   <h3><a href="#">Непотопляемая селфи-палка</a></h3>
                   <p>2500 руб.</p>
                 </article>
               </li>
               <li>
                 <article>
-                  <div><img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380"></div>
+                  <div><img src="img/item-4.jpg" alt="Селфи-палка в виде руки" width="360" height="380"></div>
                   <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
                   <p>4900 руб.</p>
                 </article>
