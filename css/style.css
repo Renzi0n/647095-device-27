@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url(../fonts/gilroylight.woff2);
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url(../fonts/gilroyextrabold.woff2);
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/opensans.woff2);
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(../fonts/opensanslight.woff2);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.map-modal, .feedback-modal, .catalog-nav {
+  display: none;
+}
+
+.main-logo img:hover, .user-nav li:hover, .site-nav li:hover  {
+  opacity: 0.6;
+}
+
+.main-logo img:active, .user-nav li:active, .site-nav li:hover {
+  opacity: 0.3;
+}
+
+.main-header ul {
+  list-style-type: none;
+}
+
+.user-nav {
+  /* Типографика */
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  text-align: left;
+  line-height: 2;
+}
+
+.user-nav a, .user-nav button, .site-nav a{
+  /* Оформление */
+  color: black;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  /* Блочная модель */
+  padding: 0;
+}
+
+.user-nav input {
+  /* Оформление */
+  border: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search::before {
+  content: url(../img/search.svg);
+}
+
+.user::before {
+  content: url(../img/user.svg);
+}
+
+.compare::before {
+  content: url(../img/compare.svg);
+}
+
+.cart::before {
+  content: url(../img/cart.svg);
+}
+
+.catalog-btn::after {
+  content: url(../img/plus.svg);
+  opacity: 0.3;
+}
+
+.site-nav {
+  /* Типографика */
+  font-family: "Gilroy-ExtraBold";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+}
+
+.about-us, .contacts {
+  /* Типографика */
+  font-family: "Gilroy-ExtraBold";
+}
+
+.about-us h2, .contacts h2, .page-tittle {
+  /* Типографика */
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  text-align: left;
+}
+
+.about-us p, .contacts p {
+  /* Типографика */
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  text-align: left;
+  /* Оформление */
+  color: #464646;
+}
+
+.about-us ul {
+  /* Типографика */
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+  /* Оформление */
+  list-style-type: none;
+}
+
+.btn {
+  /* Типографика */
+  font-family: "Gilroy-ExtraBold";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  /* Оформление */
+  background-color: white;
+  border: none;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #f0c52e;
+}
+
+.btn:active {
+  /* Оформление */
+  color: #f7e184;
+  background-color: black;
+}
+
+.main-footer {
+  /* Оформление */
+  background-color: #464646;
+  color: white;
+  /* Типографика */
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+}
+
+.main-footer ul {
+  list-style-type: none;
+}
+
+.main-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer address {
+  line-height: 2;
+  text-align: left;
+}
+
+.footer-site  -nav a {
+  color: white
+}
+
+.footer-user-nav a, .footer-user-nav button {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.exit {
+  opacity: 0.3;
+}
+
+.breadcrumbs a {
+  /* Типографика */
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  letter-spacing: 0.14px;
+  text-align: left;
+  text-decoration: none;
+  /* Оформление */
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter h3, .products a {
+  /* Типографика */
+  font-family: "Gilroy-ExtraBold";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.18px;
+  text-align: left;
+  /* Оформление */
+  color: #000000;
+  text-decoration: none;
+}
+
+.filter ul, .products ul {
+  list-style-type: none;
+}
+
+.filter label {
+  /* Типографика */
+  font-family: "OpenSans-Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2.86;
+  letter-spacing: 0.14px;
+  /* Оформление */
+  text-align: left;
+  color: #000000;
+}
+
+.products p {
+  /* Типографика */
+  font-family: "Gilroy-Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  /* Оформление */
+  color: #464646;
+}
