@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header link">
       <div class="main-logo">
         <a href="index.html"><img src="img/device.svg" alt="Логотип" width="163" height="35"></a>
       </div>
-      <ul class="user-nav">
+      <ul class="user-nav no-bullets change">
         <li>
           <form class="search" action="" method="get">
             <label class="visually-hidden" for="search">Поиск</label>
@@ -21,18 +20,18 @@
           </form>
         </li>
         <li><a class="user" href="#">Валентин Петухов</a></li>
-        <li><button class="exit" type="button">Выйти</button></li>
+        <li><a class="exit" href="#">Выйти</a></li>
         <li><a class="compare" href="#">Сравнить</a ></li>
         <li><a class="cart" href="#">Корзина</a></li>
       </ul>
       <nav class="main-nav">
-        <ul class="site-nav">
-          <li><a class="catalog-btn" href="catalog.html">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="site-nav no-bullets">
+          <li><a class="catalog-btn " href="catalog.html">Каталог товаров</a></li>
+          <li><a  href="#">Доставка</a></li>
+          <li><a  href="#">Гарантия</a></li>
+          <li><a  href="#">Контакты</a></li>
         </ul>
-        <ul class="catalog-nav">
+        <ul class="catalog-nav modal no-bullets">
           <li><a href="#">Виртуальная реальность</a></li>
           <li><a href="catalog.html">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -42,7 +41,7 @@
         </ul>
       </nav>
       <h1 class="page-tittle">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs no-bullets link change">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
         <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -53,7 +52,7 @@
             <h2>Фильтр</h2>
             <article>
               <h3>Сортировка</h3>
-              <ul>
+              <ul class="no-bullets link">
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По популярности</a></li>
@@ -69,7 +68,7 @@
               </fieldset>
               <fieldset class="color-filter">
                 <h3>Цвет</h3>
-                <ul>
+                <ul class="no-bullets">
                   <li>
                     <input type="checkbox" name="black" id="black" checked>
                     <label for="black">
@@ -104,7 +103,7 @@
               </fieldset>
               <fieldset class="bluetooth-filter">
                 <h3>Bluetooth</h3>
-                <ul>
+                <ul class="no-bullets">
                   <li>
                     <input type="radio" name="bluetooth" value="yes" id="yes" checked>
                     <label for="yes">
@@ -124,7 +123,7 @@
         </section>
         <section class="products">
             <h2 class="visually-hidden">Товары</h2>
-            <ul>
+            <ul class="no-bullets link">
               <li>
                 <article>
                   <div><img src="img/item-1.jpg" alt="Черная селфи-палка с телефоном" width="360" height="380"></div>
@@ -156,7 +155,7 @@
             </ul>
             <footer>
               <a href="#">Назад</a>
-              <ul>
+              <ul class="no-bullets link">
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
@@ -168,14 +167,14 @@
     <footer class="main-footer">
           <a href="index.html"><img src="img/device2.svg" alt="Логотип" width="163" height="35"></a>
           <address>г. Москва, ул. Строителей, 15</address>
-          <ul class="site-nav footer-site-nav">
+          <ul class="site-nav footer-site-nav no-bullets change">
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="user-nav footer-user-nav">
+          <ul class="user-nav footer-user-nav no-bullets change">
             <li><a href="#">Валентин Петухов</a></li>
-            <li><button class="exit" type="button">Выйти</button></li>
+            <li><a href="#" class="exit">Выйти</a></li>
             <li><a href="#">Сравнить</a></li>
             <li><a href="#">Корзина</a></li>
           </ul>
