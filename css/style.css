@@ -26,6 +26,26 @@
   font-weight: 300;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -59,11 +79,6 @@
   font-size: 15px;
   letter-spacing: 0.15px;
   line-height: 2;
-}
-
-.link a{
-  color: rgba(0, 0, 0, 1);
-  text-decoration: none;
 }
 
 .user-nav button {
@@ -117,7 +132,8 @@
   width: 260px;
   text-align: center;
   text-decoration: none;
-  background: rgba(240, 197, 46);
+  background: rgba(240, 197, 46, 1);
+  display: block;
 }
 
 .btn:active {
@@ -127,7 +143,6 @@
 
 .main-footer {
   background-color: rgba(70, 70, 70, 1);
-  color: rgba(255, 255, 255, 1);
   font-family: "OpenSans-Light";
   font-size: 15px;
   line-height: 2;
@@ -139,15 +154,15 @@
 }
 
 .main-footer address {
+  color: rgba(255, 255, 255, 1);
   font-style: normal;
 }
 
-.footer-site-nav a {
+.footer-site-nav {
   color: rgba(255, 255, 255, 1);
 }
 
-.footer-user-nav a,
-.exit {
+.footer-user-nav {
   color: rgba(255, 255, 255, 0.7);
 }
 
