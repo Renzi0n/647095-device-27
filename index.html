@@ -8,37 +8,39 @@
   </head>
   <body>
     <header class="main-header change">
-      <div class="main-logo">
-        <a  href="index.html"><img src="img/device.svg" alt="Логотип магазина" width="163" height="35"></a>
+      <div class="top-container">
+        <div class="main-logo">
+          <a  href="index.html"><img src="img/device.svg" alt="Логотип магазина" width="163" height="35"></a>
+        </div>
+        <ul class="user-nav no-bullets navbar">
+          <li class="form-search-item">
+            <form class="form-search" action="" method="get">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input class="search" id="search" name="search" type="search" placeholder="Поиск по сайту">
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
+          </li>
+          <li><button class="user" type="button">Войти</button></li>
+          <li><a class="compare" href="#">Сравнить</a></li>
+          <li><a class="cart" href="#">Корзина</a></li>
+        </ul>
+        <nav class="main-nav">
+          <ul class="site-nav no-bullets navbar">
+            <li><a class="catalog-btn" href="catalog.html">Каталог товаров</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="catalog-nav modal no-bullets">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </nav>
       </div>
-      <ul class="user-nav no-bullets">
-        <li>
-          <form class="search" action="" method="get">
-            <label class="visually-hidden" for="search">Поиск</label>
-            <input id="search" name="search" type="search" placeholder="Поиск по сайту">
-            <button type="submit"></button>
-          </form>
-        </li>
-        <li><button class="user" type="button">Войти</button></li>
-        <li><a class="compare" href="#">Сравнить</a></li>
-        <li><a class="cart" href="#">Корзина</a></li>
-      </ul>
-      <nav class="main-nav">
-        <ul class="site-nav no-bullets">
-          <li><a class="catalog-btn " href="catalog.html">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="catalog-nav modal no-bullets">
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="content">
       <h1 class="visually-hidden">Интернет магазин гаджетов "Девайс"</h1>
@@ -207,26 +209,30 @@
         <button class="btn" type="button">Напишите нам</button class="button">
       </section>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer container change">
       <div class="container-row">
         <a href="index.html"><img src="img/device2.svg" alt="Логотип магазина" width="163" height="35"></a>
-        <ul class="user-nav footer-user-nav no-bullets change">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+        <ul class="footer-user-nav no-bullets change">
+          <li><a class="user-footer" href="#">Войти</a class="user-footer"></li>
+          <li><a class="compare-footer" href="#">Сравнить</a class="exit"></li>
+          <li><a class="cart-footer" href="#">Корзина</a class="cart-footer"></li>
         </ul>
       </div>
       <div class="container-row">
         <address>г. Москва, ул. Строителей, 15</address>
-        <ul class="site-nav footer-site-nav no-bullets change">
+        <ul class="footer-site-nav no-bullets">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <p><a href="#">Тел.: +7 (495) 495-95-95</a></p>
       </div>
-      <div class="container-row">
-        <div class="footer-social"></div>
+      <div class="container-row decorative-block">
+        <ul class="footer-social no-bullets">
+          <li><a class="facebook soc-item" href="#"></a></li>
+          <li><a class="instagram soc-item" href="#"></a></li>
+          <li><a class="twitter soc-item" href="#"></a></li>
+        </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип академии"></a>
       </div>
     </footer>
