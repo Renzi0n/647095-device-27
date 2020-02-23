@@ -32,9 +32,9 @@
             <li><a href="#">Гарантия</a</li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="catalog-nav modal no-bullets">
+          <ul class="catalog-nav no-bullets">
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
@@ -54,14 +54,14 @@
         <h2>Фильтр:</h2>
           <form class="filter-form" action="" method="GET">
             <fieldset>
-              <h3>Стоимость</h3>
+              <h3 class="page-text">Стоимость</h3>
               <input type="range" min="0" max="8000" value="5000" id="price">
               <label for="price" class="visually-hidden">
                 Диапазон стоимости
               </label>
             </fieldset>
             <fieldset class="color-filter">
-              <h3>Цвет</h3>
+              <h3 class="page-text">Цвет</h3>
               <ul class="no-bullets">
                 <li>
                   <input type="checkbox" name="black" id="black" checked>
@@ -96,7 +96,7 @@
               </ul>
             </fieldset>
             <fieldset class="bluetooth-filter">
-              <h3>Bluetooth</h3>
+              <h3 class="page-text">Bluetooth</h3>
               <ul class="no-bullets">
                 <li>
                   <input type="radio" name="bluetooth" value="yes" id="yes" checked>
@@ -118,10 +118,22 @@
       <div class="catalog-container">
         <section class="sorting">
           <h2>Сортировка:</h2>
-          <ul class="no-bullets change-other">
+          <ul class="no-bullets change-other sorting-list">
             <li><a class="active" href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
+          </ul>
+          <ul class="no-bullets sort-up-down change-other">
+            <li>
+              <a href="#">
+                <img src="img/icon-down-dir.svg" alt="сортировка по убыванию" width="11px" height="10px">
+              </a>
+            </li>
+            <li>
+              <a class="icon-up active" href="#">
+                <img src="img/icon-up-dir.svg" alt="сортировка по возрастанию" width="11px" height="10px">
+              </a>
+            </li>
           </ul>
         </section>
         <section class="products">
@@ -129,44 +141,60 @@
           <ul class="no-bullets products-list">
             <li>
               <article class="product-card">
-                <div>
+                <div class="product-photo">
                   <img src="img/item-1.jpg" alt="Черная селфи-палка с телефоном" width="360" height="380">
+                  <div class="product-buy">
+                    <a class="btn" href="#">В корзину</a>
+                    <p class="change"><a href="#">Добавить к сравнению</a></p>
+                  </div>
                 </div>
                 <div class="product-info">
-                  <h3><a href="#">Любительская селфи-палка</a></h3>
+                  <h3 class="page-text"><a href="#">Любительская селфи-палка</a></h3 class="page-text">
                   <p>500 руб.</p>
                 </div>
               </article>
             </li>
             <li>
               <article class="product-card">
-                <div>
+                <div class="product-photo">
                   <img src="img/item-2.jpg" alt="Черная селфи-палка" width="360" height="380">
+                  <div class="product-buy">
+                    <a class="btn" href="#">В корзину</a>
+                    <p class="change"><a href="#">Добавить к сравнению</a></p>
+                  </div>
                 </div>
                 <div class="product-info">
-                  <h3><a href="#">Профессиональная селфи-палка</a></h3>
+                  <h3 class="page-text"><a href="#">Профессиональная селфи-палка</a></h3>
                   <p>1500 руб.</p>
                 </div>
               </article>
             </li>
             <li>
               <article class="product-card">
-                <div>
+                <div class="product-photo">
                   <img src="img/item-3.jpg" alt="Черно-желтая селфи палка с камерой" width="360" height="380">
+                  <div class="product-buy">
+                    <a class="btn" href="#">В корзину</a>
+                    <p class="change"><a href="#">Добавить к сравнению</a></p>
+                  </div>
                 </div>
                 <div class="product-info">
-                  <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+                  <h3 class="page-text"><a href="#">Непотопляемая селфи-палка</a></h3>
                   <p>2500 руб.</p>
                 </div>
               </article>
             </li>
             <li>
               <article class="product-card">
-                <div>
+                <div class="product-photo">
                   <img src="img/item-4.jpg" alt="Селфи-палка в виде руки" width="360" height="380">
+                  <div class="product-buy">
+                    <a class="btn" href="#">В корзину</a>
+                    <p class="change"><a href="#">Добавить к сравнению</a></p>
+                  </div>
                 </div>
                 <div class="product-info">
-                  <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+                  <h3 class="page-text"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
                   <p>4900 руб.</p>
                 </div>
               </article>
@@ -212,5 +240,6 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип академии"></a>
       </div>
     </footer>
+    <script src="js/popup.js"></script>
     </body>
   </html>

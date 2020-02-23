@@ -34,6 +34,72 @@
   font-weight: 300;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  20% {
+    transform: translateY(0px);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -43,6 +109,7 @@ html {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 img {
@@ -80,7 +147,7 @@ a {
   content: "";
   position: absolute;
   z-index: -1;
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: rgba(247, 226, 150, 1);
   top: 20px;
   width: 100%;
   height: 299px;
@@ -93,7 +160,6 @@ a {
 .main-header ul {
   padding-left: 0;
   margin-bottom: 0;
-  margin-top: 0;
 }
 
 .main-header .user-nav {
@@ -286,10 +352,30 @@ a {
 }
 
 .catalog-nav {
-  line-height: 36px;
-  display: flex;
-  max-height: 129px;
-  padding-bottom: 60px;
+  line-height: 2.4;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 129px;
+  margin-top: 25px;
+  position: absolute;
+  background-color: rgba(247, 226, 150, 1);
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.catalog-nav li {
+  width: fit-content;
+  padding-left: 50px;
+}
+
+.catalog-nav li:nth-child(3n+1) {
+  margin-right: 58px;
+}
+
+.catalog-nav li:last-child {
+  margin-right: 100%;
 }
 
 .breadcrumbs {
@@ -352,6 +438,7 @@ a {
 .categories-item p {
   font-family: "Gilroy-ExtraBold";
   font-size: 18px;
+  line-height: 24px;
   margin-top: 39px;
   margin-bottom: 0;
 }
@@ -429,6 +516,21 @@ a {
 .sorting {
   display: flex;
   background-color: rgba(235, 235, 235, 1);
+  position: relative;
+}
+
+.sort-up-down {
+  margin-left: auto;
+  margin-right: 139px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon-up {
+  margin-left: 19px;
 }
 
 .sorting h2 {
@@ -437,7 +539,7 @@ a {
   padding-left: 74px;
 }
 
-.sorting ul {
+.sorting-list {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -446,21 +548,24 @@ a {
   padding-left: 0;
 }
 
-.sorting a {
-  padding-right: 30px;
-  color: rgba(0, 0, 0, 0.3);
+.change-other a {
+  opacity: 0.3;
 }
 
 .change-other a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .change-other .active,
 .change-other a:active {
-  color: rgba(0, 0, 0, 1);
+  opacity: 1;
 }
 
-.sorting a:last-child {
+.sorting-list a {
+  padding-right: 30px;
+}
+
+.sorting-list a:last-child {
   margin-right: 0px;
 }
 
@@ -483,8 +588,10 @@ a {
   margin-bottom: 41px;
 }
 
-.product-card img{
-  padding-bottom: 38px;
+.product-photo {
+  position: relative;
+  margin-bottom: 38px;
+  cursor: pointer;
 }
 
 .product-card h3,
@@ -504,6 +611,35 @@ a {
 
 .product-info p {
   text-align: right;
+}
+
+.product-buy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.product-buy .btn {
+  width: 200px;
+  margin-bottom: 33px;
+}
+
+.product-photo:hover .product-buy {
+  display: flex;
+  animation: bounce2 0.6s;
+}
+
+.product-buy .change {
+  font-family: "OpenSans-Light";
+  font-size: 13px;
+  line-height: 2.77;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .pagination {
@@ -543,7 +679,6 @@ a {
 }
 
 .pagination-list a {
-  color: rgba(0, 0, 0, 0.3);
   padding-left: 31px;
   padding-right: 31px;
 }
@@ -748,7 +883,8 @@ a {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.service-list .active {
+.service-list .active,
+.service-list .active:focus {
   color: rgba(247, 225, 132, 1);
 }
 
@@ -917,7 +1053,7 @@ a {
   position: absolute;
   display: block;
   width: 100%;
-  height: 8px;
+  height: 7px;
   left: 0px;
   top: 8px;
   z-index: -1;
@@ -928,10 +1064,6 @@ a {
 .service-list .active::after {
   height: 100%;
   top: 0;
-}
-
-.btn:focus {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .btn:active {
@@ -1105,8 +1237,7 @@ a {
   opacity: 0.3;
 }
 
-.filter h3,
-.products-list a {
+.page-text {
   font-family: "Gilroy-ExtraBold";
   font-size: 18px;
   line-height: 1.33;
@@ -1131,9 +1262,117 @@ a {
 
 .modal {
   display: none;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  width: 960px;
+  margin-top: -312px;
+  margin-left: -480px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  z-index: 3;
+}
+
+.modal-close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  right: 22px;
+  top: 22px;
+  cursor: pointer;
+  background-image: url(../img/modal-close.svg);
+  opacity: 0.5;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.modal-write-us {
+  padding-top: 98px;
+  padding-bottom: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.modal-label {
+  font-family: "Gilroy-ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-form .btn {
+  width: 200px;
+}
+
+.modal-form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input {
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
+  opacity: 0.5;
+  padding: 20px;
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 1.29;
+  color: rgba(70, 70, 70, 0.4);
+  width: 360px;
+}
+
+.modal-input:hover {
+  background-color: rgba(234, 234, 234, 1);
+}
+
+.modal-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  border: solid 3px rgba(240, 197, 46, 1);
+  color: rgba(70, 70, 70, 1);
+  outline: none;
+}
+
+.no-valid {
+  background-color: rgba(246, 218, 218, 1);
+  animation: shake 0.6s;
+}
+
+.text-letter {
+  margin-top: 39px;
+  margin-bottom: 55px;
+  width: 100%;
+}
+
+.text-letter .modal-input {
+  min-height: 156px;
+  width: 100%;
 }
 
 .show,
 .service .show {
   display: flex;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.popup-show {
+  display: flex;
+  animation: bounce2 0.6s;
 }
