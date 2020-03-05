@@ -5,6 +5,12 @@ let modalClose = document.querySelectorAll(".modal-close"),
     modalWrite = document.querySelector(".modal-write-us"),
     modalInput = document.querySelectorAll(".modal-input"),
     submit = document.querySelector(".btn-submit"),
+    catalogBtn = document.querySelector(".catalog-btn"),
+    catalogNav = document.querySelector(".catalog-nav"),
+    sliderInput = document.querySelectorAll(".slider-input"),
+    galleryItem = document.querySelectorAll(".gallery-item"),
+    sliderBtn = document.querySelectorAll(".service-list .btn"),
+    galleryBlock = document.querySelectorAll(".service article"),
 
     modalParent;
 
@@ -20,6 +26,14 @@ function modalOpen(btn, modal) {
     });
   });
 }
+
+
+catalogBtn.addEventListener('mouseenter', function (evt) {
+  catalogNav.classList.add("popup-show");
+  catalogNav.addEventListener("mouseleave", function () {
+    catalogNav.classList.remove("popup-show");
+  });
+});
 
 for (let i = 0; i < modalClose.length; i++) {
   modalClose[i].addEventListener("click", function () {
@@ -44,4 +58,31 @@ submit.addEventListener("click", function (evt) {
     };
   };
 });
+for (let i = 0; i < galleryItem.length; i++) {
+  sliderInput[i].addEventListener('click', function () {
+    if (sliderInput[i].checked) {
+      galleryItem[i].classList.add("show");
+    };
+    for (let i = 0; i < galleryItem.length; i++)  {
+      if (!sliderInput[i].checked) {
+        galleryItem[i].classList.remove("show");
+      };
+    }
+  });
+};
+
+for (let i = 0; i < galleryBlock.length; i++) {
+  sliderBtn[i].addEventListener('click', function () {
+    for (let i = 0; i < galleryBlock.length; i++)  {
+      if (galleryBlock[i].classList.contains("show")) {
+        galleryBlock[i].classList.remove("show");
+        sliderBtn[i].classList.remove("active");
+      };
+    };
+    sliderBtn[i].classList.add("active");
+    galleryBlock[i].classList.add("show");
+  });
+};
+
+
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
   </head>
   <body>
     <header class="main-header change">
@@ -14,7 +14,7 @@
         </div>
         <ul class="user-nav no-bullets navbar">
           <li class="form-search-item">
-            <form class="form-search" action="" method="get">
+            <form class="form-search" action="#" method="get">
               <label class="visually-hidden" for="search">Поиск</label>
               <input class="search" id="search" name="search" type="search" placeholder="Поиск по сайту">
               <button class="search-btn" type="submit">Найти</button>
@@ -61,9 +61,9 @@
             </li>
           </ul>
         </form>
-        <h2 class="visually-hidden">Галлерея товаров</h2 class="visually-hidden">
+        <h2 class="visually-hidden">Галлерея товаров</h2>
         <div class="gallery-item first-slide show">
-          <h3 class="visually-hidden">Селфи-палка</h3 class="visually-hidden">
+          <h3 class="visually-hidden">Селфи-палка</h3>
           <img src="img/slider-1.png" alt="Черная селфи-палка в трех положениях" width="384" height="486">
           <div class="gallery-item-info">
             <p class="page-tittle">
@@ -182,7 +182,7 @@
         </ul>
       </section>
       <section class="service">
-        <h2 class="visually-hidden">Сервис</h2 class="visually-hidden">
+        <h2 class="visually-hidden">Сервис</h2>
         <ul class="no-bullets service-list">
           <li><button class="btn active">Доставка</button></li>
           <li><button class="btn">Гарантия</button></li>
@@ -199,7 +199,7 @@
         </article>
         <article class="service-garant">
           <div>
-            <h3 class="page-tittle">Гарантия</h3 class="page-tittle">
+            <h3 class="page-tittle">Гарантия</h3>
             <p class="info-text">
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.
@@ -208,7 +208,7 @@
         </article>
         <article class="service-credit">
           <div>
-            <h3 class="page-tittle">Кредит</h3 class="page-tittle">
+            <h3 class="page-tittle">Кредит</h3>
             <p class="info-text">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
               условия кредита. Выгодные для нашего банка, разумеется.
@@ -261,7 +261,7 @@
           <h2 class="page-tittle">Контакты</h2>
           <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="modal-open-map" href="#"><img src="img/map-jpg.jpg" alt="Карта с адресом улица строителей 15" width="560" height="222"></a>
-          <button class="btn modal-open-write" type="button">Напишите нам</button class="button">
+          <button class="btn modal-open-write" type="button">Напишите нам</button>
         </section>
       </div>
     </main>
@@ -269,9 +269,9 @@
       <div class="container-row">
         <a href="index.html"><img src="img/device2.svg" alt="Логотип магазина" width="163" height="35"></a>
         <ul class="footer-user-nav no-bullets change">
-          <li><a class="user-footer" href="#">Войти</a class="user-footer"></li>
-          <li><a class="compare-footer" href="#">Сравнить</a class="exit"></li>
-          <li><a class="cart-footer" href="#">Корзина</a class="cart-footer"></li>
+          <li><a class="user-footer" href="#">Войти</a></li>
+          <li><a class="compare-footer" href="#">Сравнить</a></li>
+          <li><a class="cart-footer" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="container-row">
@@ -293,30 +293,28 @@
       </div>
     </footer>
     <div class="modal modal-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947348!2d37.52742931580127!3d55.68703400453013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1582393438931!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen="">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947348!2d37.52742931580127!3d55.68703400453013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1582393438931!5m2!1sru!2sru" width="960" height="559" allowfullscreen="">
       </iframe>
       <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
     </div>
     <div class="modal modal-write-us">
-      <form class="modal-form" action="" method="GET">
+      <form class="modal-form" action="#" method="GET">
         <p class="modal-form-item">
           <label class="modal-label" for="your-name">Ваше имя:</label>
-          <input class="modal-input" id="your-name" type="name" name="name" placeholder="Имя Фамилия">
+          <input class="modal-input" id="your-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="modal-form-item">
           <label class="modal-label" for="email">Ваш e-mail:</label>
-          <input class="modal-input" type="email" id="email" name="email" placeholder="email@example.com">
+          <input class="modal-input" type="text" id="email" name="email" placeholder="email@example.com">
         </p>
         <p class="text-letter modal-form-item">
           <label class="modal-label" for="main-text">Текст письма:</label>
-          <textarea class="modal-input" type="text" id="main-text" name="text" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-input" id="main-text" name="text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="btn btn-submit" type="submit">Отправить</button>
         <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
       </form>
     </div>
-    <script src="js/slider.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

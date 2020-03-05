@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
   </head>
   <body>
     <header class="main-header change background-size">
@@ -14,7 +14,7 @@
         </div>
         <ul class="user-nav no-bullets change navbar-extra">
           <li class="form-search-item">
-            <form class="form-search" action="" method="get">
+            <form class="form-search" action="#" method="get">
               <label class="visually-hidden" for="search">Поиск</label>
               <input class="search" id="search" name="search" type="search" placeholder="Поиск по сайту">
               <button class="search-btn" type="submit">Найти</button>
@@ -29,7 +29,7 @@
           <ul class="site-nav no-bullets navbar">
             <li><a class="catalog-btn" href="catalog.html">Каталог товаров</a></li>
             <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a</li>
+            <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
           <ul class="catalog-nav no-bullets">
@@ -52,7 +52,7 @@
     <main class="container">
       <section class="filter">
         <h2>Фильтр:</h2>
-          <form class="filter-form" action="" method="GET">
+          <form class="filter-form" action="#" method="GET">
             <fieldset>
               <h3 class="page-text">Стоимость</h3>
               <input type="range" min="0" max="8000" value="5000" id="price">
@@ -64,31 +64,31 @@
               <h3 class="page-text">Цвет</h3>
               <ul class="no-bullets">
                 <li>
-                  <input type="checkbox" name="black" id="black" checked>
+                  <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
                   <label for="black">
                     Черный
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="white" id="white">
+                  <input class="visually-hidden" type="checkbox" name="white" id="white">
                   <label for="white">
                     Белый
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="blue" id="blue" checked>
+                  <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
                   <label for="blue">
                     Синий
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="red" id="red" checked>
+                  <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
                   <label for="red">
                     Красный
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="pink" id="pink" >
+                  <input class="visually-hidden" type="checkbox" name="pink" id="pink" >
                   <label for="pink">
                     Розовый
                   </label>
@@ -99,14 +99,14 @@
               <h3 class="page-text">Bluetooth</h3>
               <ul class="no-bullets">
                 <li>
-                  <input type="radio" name="bluetooth" value="yes" id="yes" checked>
+                  <input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="yes" checked>
                   <label for="yes">
                     Есть
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="bluetooth" value="no" id="no">
-                  <label for="no  ">
+                  <input class="visually-hidden" type="radio" name="bluetooth" value="no" id="no">
+                  <label for="no">
                     Нет
                   </label>
                 </li>
@@ -126,12 +126,12 @@
           <ul class="no-bullets sort-up-down change-other">
             <li>
               <a href="#">
-                <img src="img/icon-down-dir.svg" alt="сортировка по убыванию" width="11px" height="10px">
+                <img src="img/icon-down-dir.svg" alt="сортировка по убыванию" width="11" height="10">
               </a>
             </li>
             <li>
               <a class="icon-up active" href="#">
-                <img src="img/icon-up-dir.svg" alt="сортировка по возрастанию" width="11px" height="10px">
+                <img src="img/icon-up-dir.svg" alt="сортировка по возрастанию" width="11" height="10">
               </a>
             </li>
           </ul>
@@ -149,7 +149,7 @@
                   </div>
                 </div>
                 <div class="product-info">
-                  <h3 class="page-text"><a href="#">Любительская селфи-палка</a></h3 class="page-text">
+                  <h3 class="page-text"><a href="#">Любительская селфи-палка</a></h3>
                   <p>500 руб.</p>
                 </div>
               </article>
@@ -218,8 +218,8 @@
         <ul class="footer-user-nav no-bullets">
           <li><a class="user-footer" href="#">Валентин Петухов</a></li>
           <li><a class="exit" href="#">Выйти</a></li>
-          <li><a class="compare-footer" href="#">Сравнить</a class="user-footer"></li>
-          <li><a class="cart-footer" href="#">Корзина</a class="user-footer"></li>
+          <li><a class="compare-footer" href="#">Сравнить</a></li>
+          <li><a class="cart-footer" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="container-row">
@@ -240,6 +240,6 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип академии"></a>
       </div>
     </footer>
-    <script src="js/popup.js"></script>
+    <script src="js/script.min.js"></script>
     </body>
   </html>
