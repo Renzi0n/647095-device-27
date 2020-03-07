@@ -26,18 +26,20 @@
         </ul>
         <nav class="main-nav">
           <ul class="site-nav no-bullets navbar">
-            <li><a class="catalog-btn" href="catalog.html">Каталог товаров</a></li>
+            <li class="catalog-btn" tabindex="0">
+              <a href="catalog.html" tabindex="-1">Каталог товаров</a>
+              <ul class="catalog-nav no-bullets">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="catalog-nav no-bullets">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </nav>
       </div>
@@ -49,15 +51,15 @@
           <ul class="slider-navbar no-bullets">
             <li>
               <input class="visually-hidden slider-input" type="radio" name="slider-item" value="first-slide" id="first" checked>
-              <label for="first" class="">Открыть первый слайд</label>
+              <label for="first">Открыть первый слайд</label>
             </li>
             <li>
               <input class="visually-hidden slider-input" type="radio" name="slider-item" value="scnd-slide" id="scnd" >
-              <label for="scnd" class="">Открыть второй слайд</label>
+              <label for="scnd">Открыть второй слайд</label>
             </li>
             <li>
               <input class="visually-hidden slider-input" type="radio" name="slider-item" value="thrd-slide" id="thrd">
-              <label for="thrd" class="">Открыть третий слайд</label>
+              <label for="thrd">Открыть третий слайд</label>
             </li>
           </ul>
         </form>

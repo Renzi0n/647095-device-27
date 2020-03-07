@@ -361,17 +361,23 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   height: 129px;
-  margin-top: 25px;
+  padding-top: 25px;
   position: absolute;
   background-color: rgba(247, 226, 150, 1);
-  width: 100%;
-  left: 0;
+  width: 110.2%;
+  height: 160px;
+  left: -5.1%;
   z-index: 1;
 }
 
-.catalog-nav li {
+.catalog-btn:focus-within .catalog-nav {
+  display: flex;
+}
+
+.catalog-nav li:nth-child(n) {
   width: fit-content;
-  padding-left: 50px;
+  margin: 0;
+  padding-left: 5%;
 }
 
 .catalog-nav li:nth-child(3n+1) {
@@ -526,6 +532,14 @@ a {
   cursor: pointer;
 }
 
+.filter-form input:focus + label::before {
+  border: 2px solid rgba(0, 123, 255, 0.4);
+}
+
+.filter-form label:focus {
+  background-color: lawngreen;
+}
+
 .color-filter input + label::before {
   background-image: url(../img/checkbox-off.svg);
 }
@@ -663,9 +677,14 @@ a {
   margin-bottom: 33px;
 }
 
-.product-photo:hover .product-buy {
+.product-photo:hover .product-buy,
+.product-photo:focus-within .product-buy {
   display: flex;
   animation: bounce2 0.6s;
+}
+
+.product-buy *:focus {
+  border: 2px solid rgba(0, 123, 255, 0.4);
 }
 
 .product-buy .change {
@@ -833,6 +852,10 @@ a {
   user-select: none;
   font-size: 0;
   margin-left: 25px;
+}
+
+.slider-input:focus + label::before {
+  border: 2px solid rgba(0, 123, 255, 0.4);
 }
 
 .slider-input + label::before {
@@ -1411,7 +1434,6 @@ a {
 
 .popup-show {
   display: flex;
-  animation: bounce2 0.6s;
 }
 
 .modal-map iframe {

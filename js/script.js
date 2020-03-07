@@ -27,10 +27,9 @@ function modalOpen(btn, modal) {
   });
 }
 
-
 catalogBtn.addEventListener('mouseenter', function (evt) {
   catalogNav.classList.add("popup-show");
-  catalogNav.addEventListener("mouseleave", function () {
+  catalogBtn.addEventListener("mouseleave", function () {
     catalogNav.classList.remove("popup-show");
   });
 });
