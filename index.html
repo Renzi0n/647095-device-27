@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
   </head>
   <body>
-    <header class="main-header change">
+    <header class="main-header change main-container">
       <div class="top-container">
         <div class="main-logo">
           <a  href="index.html"><img src="img/device.svg" alt="Логотип магазина" width="163" height="35"></a>
@@ -44,9 +44,9 @@
         </nav>
       </div>
     </header>
-    <main class="content">
+    <main>
       <h1 class="visually-hidden">Интернет магазин гаджетов "Девайс"</h1>
-      <section class="gallery">
+      <section class="gallery main-container">
         <form class="slider-nav" action="#" method="GET">
           <ul class="slider-navbar no-bullets">
             <li>
@@ -130,7 +130,7 @@
           </div>
         </div>
       </section>
-      <section class="categories">
+      <section class="categories main-container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
           <li>
@@ -184,41 +184,43 @@
         </ul>
       </section>
       <section class="service">
-        <h2 class="visually-hidden">Сервис</h2>
-        <ul class="no-bullets service-list">
-          <li><button class="btn active">Доставка</button></li>
-          <li><button class="btn">Гарантия</button></li>
-          <li><button class="btn">Кредит</button></li>
-        </ul>
-        <article class="show service-delievery">
-          <div>
-            <h3 class="page-tittle">Доставка</h3>
-            <p class="info-text">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-          </div>
-        </article>
-        <article class="service-garant">
-          <div>
-            <h3 class="page-tittle">Гарантия</h3>
-            <p class="info-text">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </div>
-        </article>
-        <article class="service-credit">
-          <div>
-            <h3 class="page-tittle">Кредит</h3>
-            <p class="info-text">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-              условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </div>
-        </article>
+        <div class="main-container">
+          <h2 class="visually-hidden">Сервис</h2>
+          <ul class="no-bullets service-list">
+            <li><button class="btn active">Доставка</button></li>
+            <li><button class="btn">Гарантия</button></li>
+            <li><button class="btn">Кредит</button></li>
+          </ul>
+          <article class="show service-delievery">
+            <div>
+              <h3 class="page-tittle">Доставка</h3>
+              <p class="info-text">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
+          </article>
+          <article class="service-garant">
+            <div>
+              <h3 class="page-tittle">Гарантия</h3>
+              <p class="info-text">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </div>
+          </article>
+          <article class="service-credit">
+            <div>
+              <h3 class="page-tittle">Кредит</h3>
+              <p class="info-text">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
-      <section class="partners">
+      <section class="partners main-container">
         <h3 class="visually-hidden">Партнеры</h3>
         <ul class="partners-list">
           <li>
@@ -243,7 +245,7 @@
           </li>
         </ul>
       </section>
-      <div class="info-container">
+      <div class="info-container main-container">
         <section class="about-us info-block decorative-block">
           <h2 class="page-tittle">О нас</h2>
           <p class="info-text">
@@ -267,31 +269,33 @@
         </section>
       </div>
     </main>
-    <footer class="main-footer container change">
-      <div class="container-row">
-        <a href="index.html"><img src="img/device2.svg" alt="Логотип магазина" width="163" height="35"></a>
-        <ul class="footer-user-nav no-bullets change">
-          <li><a class="user-footer" href="#">Войти</a></li>
-          <li><a class="compare-footer" href="#">Сравнить</a></li>
-          <li><a class="cart-footer" href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <div class="container-row">
-        <address>г. Москва, ул. Строителей, 15</address>
-        <ul class="footer-site-nav no-bullets">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <p><a href="#">Тел.: +7 (495) 495-95-95</a></p>
-      </div>
-      <div class="container-row decorative-block">
-        <ul class="footer-social no-bullets">
-          <li><a class="facebook soc-item" href="#"></a></li>
-          <li><a class="instagram soc-item" href="#"></a></li>
-          <li><a class="twitter soc-item" href="#"></a></li>
-        </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип академии"></a>
+    <footer class="main-footer change">
+      <div class="main-container">
+        <div class="container-row">
+          <a href="index.html"><img src="img/device2.svg" alt="Логотип магазина" width="163" height="35"></a>
+          <ul class="footer-user-nav no-bullets change">
+            <li><a class="user-footer" href="#">Войти</a></li>
+            <li><a class="compare-footer" href="#">Сравнить</a></li>
+            <li><a class="cart-footer" href="#">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="container-row">
+          <address>г. Москва, ул. Строителей, 15</address>
+          <ul class="footer-site-nav no-bullets">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <p><a href="#">Тел.: +7 (495) 495-95-95</a></p>
+        </div>
+        <div class="container-row decorative-block">
+          <ul class="footer-social no-bullets">
+            <li><a class="facebook soc-item" href="#"></a></li>
+            <li><a class="instagram soc-item" href="#"></a></li>
+            <li><a class="twitter soc-item" href="#"></a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип академии"></a>
+        </div>
       </div>
     </footer>
     <div class="modal modal-map">
