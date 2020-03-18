@@ -27,7 +27,7 @@ function modalOpen(btn, modal) {
   });
 }
 
-catalogBtn.addEventListener('mouseenter', function (evt) {
+catalogBtn.addEventListener("mouseenter", function (evt) {
   catalogNav.classList.add("popup-show");
   catalogBtn.addEventListener("mouseleave", function () {
     catalogNav.classList.remove("popup-show");
