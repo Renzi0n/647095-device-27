@@ -226,7 +226,7 @@ a {
 
 .main-header {
   margin-top: 20px;
-  margin-bottom: 58px;
+  margin-bottom: 49px;
   position: relative;
 }
 
@@ -467,8 +467,8 @@ a {
 }
 
 .main-header .page-tittle {
-  margin-bottom: 30px;
-  margin-top: 100px;
+  margin-bottom: 28px;
+  margin-top: 90px;
 }
 
 .catalog-nav {
@@ -534,7 +534,7 @@ a {
 }
 
 .categories {
-  margin-top: 106px;
+  margin-top: 121px;
 }
 
 .categories-list {
@@ -778,14 +778,16 @@ a {
 }
 
 .filter .btn {
-  width: 200px
+  width: 200px;
+  margin-top: 15px;
 }
 
 .filter-form fieldset {
   border: none;
   border-top: 2px solid rgba(0, 0, 0, 1);
-  padding-top: 16px;
-  padding-bottom: 40px;
+  padding-top: 18px;
+  padding-bottom: 30px;
+  padding-left: 0;
 }
 
 .filter-form-elem input + label::before,
@@ -798,6 +800,11 @@ a {
   height: 25px;
   margin-right: 14px;
   cursor: pointer;
+}
+
+.color-filter h3,
+.bluetooth-filter h3{
+  margin-bottom: 20px;
 }
 
 .filter-form-elem input:focus + label::before {
@@ -829,7 +836,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   background-color: rgba(235, 235, 235, 1);
   position: relative;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -866,7 +872,7 @@ a {
 .sorting h2 {
   margin: 0;
   width: auto;
-  padding-left: 74px;
+  padding-left: 84px;
 }
 
 .sorting-list {
@@ -1081,6 +1087,7 @@ a {
   position: relative;
   z-index: 0;
   height: 486px;
+  margin-top: 58px;
 }
 
 .gallery-item {
@@ -1095,6 +1102,7 @@ a {
 
 .gallery-item-info {
   max-width: 502px;
+  margin-right: 20px;
 }
 
 .gallery-item-info ul {
@@ -1109,8 +1117,8 @@ a {
 
 .gallery-item-info .page-tittle {
   line-height: 56px;
-  margin-top: 38px;
-  margin-bottom: 0;
+  margin-top: 75px;
+  margin-bottom: -6px;
   position: relative;
 }
 
@@ -1120,7 +1128,7 @@ a {
 
 .gallery-item-info .info-text {
   margin-top: 31px;
-  margin-bottom: 62px;
+  margin-bottom: 56px;
   max-width: 479px;
 }
 
@@ -1133,8 +1141,8 @@ a {
   font-family: "Gilroy-Light", "Arial", sans-serif;
   font-size: 36px;
   line-height: 1.33;
-  margin-top: 71px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 .feature {
@@ -1151,7 +1159,7 @@ a {
   width: 100px;
   height: 7px;
   background-color: rgba(255, 255, 255, 1);
-  top: -25px;
+  top: -40px;
 }
 
 .gallery-item::after {
@@ -1180,8 +1188,8 @@ a {
 .slider-nav {
   position: absolute;
   z-index: 1;
-  right: 230px;
-  top: 305px;
+  right: 105px;
+  top: 331px;
 }
 
 .slider-navbar {
@@ -1201,7 +1209,7 @@ a {
       -ms-user-select: none;
           user-select: none;
   font-size: 0;
-  margin-left: 25px;
+  margin-left: 34px;
 }
 
 .slider-input:focus + label::before {
@@ -1261,11 +1269,11 @@ a {
 }
 
 .service-list li {
-  margin-bottom: 53px;
+  margin-bottom: 50px;
 }
 
 .service article {
-  padding-left: 116px;
+  padding-left: 130px;
   padding-right: 66px;
   display: none;
 }
@@ -1300,8 +1308,8 @@ a {
 }
 
 .service h3 {
-  margin-top: 65px;
-  margin-bottom: 43px;
+  margin-top: 75px;
+  margin-bottom: 34px;
 }
 
 .info-text {
@@ -1390,6 +1398,10 @@ a {
   display: none;
 }
 
+.contacts .info-text {
+  margin-bottom: 50px;
+}
+
 .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,23 +1414,28 @@ a {
 }
 
 .info-container h2 {
-  margin-bottom: 59px;
+  margin-bottom: 53px;
+  margin-top: 46px;
 }
 
-.info-container .btn {
+.info-block .btn {
   width: 260px;
-  margin-top: 80px;
+  margin-top: 65px;
+}
+
+.contacts .btn {
+  margin-top: 60px;
 }
 
 .about-us p:nth-child(2n+1) {
   margin-top: 0;
-  margin-bottom: 44px;
+  margin-bottom: 65px;
 }
 
 .about-us p:nth-child(2n+2),
 .contacts p {
   margin-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .about-us ul {
@@ -1441,6 +1458,7 @@ a {
   font-size: 16px;
   line-height: 2.5;
   color: rgba(163, 163, 163, 1);
+  margin-top: 55px;
 }
 
 .about-us span {
