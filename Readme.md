@@ -1,5 +1,7 @@
 # Личный проект «Девайс»
 
+https://renzi0n.github.io/647095-device-27/
+
 * Студент: [Андрей Решетов](https://htmlacademy.ru/profile/id647095).
 * Наставник: `Артем Рудов`(https://htmlacademy.ru/profile/artrudov).
 
